@@ -1,6 +1,8 @@
 # ThucHanh-Web-2
 Sử dụng: Spring MVC, JPA, Thymeleaf
 
+Cách làm:
+
 Phân chia công việc: <br>
      - Trần Trung Hiếu: chức năng xem danh sách, thêm sản phẩm <br>
      - Ngô Văn Quyết: chức năng sửa sản phẩm <br>
