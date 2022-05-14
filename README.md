@@ -1,7 +1,8 @@
 # ThucHanh-Web-2
 Sử dụng: Spring MVC, JPA, Thymeleaf
 
-Cách làm:
+Cách làm: Tạo interface PoductRepository để kết nối và truy vấn tới csdl, lớp model Product, lớp ProductController chứa các hàm xử lý cho các chức năng. Giao diện sử dụng Thymeleaf để hiển thị sữ liệu truyền từ Controller.
+
 
 Phân chia công việc: <br>
      - Trần Trung Hiếu: chức năng xem danh sách, thêm sản phẩm <br>
