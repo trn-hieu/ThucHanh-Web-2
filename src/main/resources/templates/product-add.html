@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+        <h1>New Product</h1>
+        <h3 style="color: red;" th:text="${error}"></h3>
+        <form method="post" th:action="@{/product/add}" th:object="${product}" id="add-product">
+            <span>Product Code: </span>
+            <span><input type="text" name="code" required th:field="*{code}"></span><br>
+            <span>Product Description: </span>
+            <span><textarea name="description" required th:field="*{description}"></textarea></span><br>
+            <span>Product Price: </span> 
+            <span><input type="number" min="1" name="price" required th:field="*{price}"></span><br>
+        </form>
+        <button type="submit" form="add-product">Add product</button>
+            <a href="/product/all"><button>Return</button></a>
+    </body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Product Page</title>
+    </head>
+    <body>
+        <h1>Are you sure you want to delete this product?</h1>
+        <form method="post" th:action="@{/product/delete}" id="delete">
+            <span>Product Code: </span>
+            <span th:text="${product.code}" ></span><br>
+            <span>Product Description: </span>
+            <span th:text="${product.description}"></span><br>
+            <span>Product Price: </span> 
+            <span th:text="${product.price}"></span><br>
+            <input type="hidden" name="code" th:value="${product.code}">
+            
+        </form>
+        <button type="submit" form="delete">Yes</button>
+        <a href="/product/all"><button>No</button></a>
+    </body>
+</html>

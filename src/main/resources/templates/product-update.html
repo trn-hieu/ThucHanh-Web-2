@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Product Page</title>
+    </head>
+    <body>
+        <h1>Update Product</h1>
+        <form method="post" th:action="@{/product/update}" th:object="${product}" id="update">
+            <span>Product Code: </span>
+            <span><input type="text" name="code" required th:field="*{code}" readonly="readonly"></span><br>
+            <span>Product Description: </span>
+            <span><textarea name="description" required th:field="*{description}"></textarea></span><br>
+            <span>Product Price: </span> 
+            <span><input type="number" min="1" name="price" required th:field="*{price}"></span><br>
+            
+        </form>
+        	<button type="submit" form="update">Update product</button>
+            <a href="/product/all"><button>Return</button></a>
+    </body>
+</html>
